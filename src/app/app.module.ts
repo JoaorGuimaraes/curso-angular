@@ -8,7 +8,13 @@ import { ParentDataComponent } from './components/parent-data/parent-data.compon
 import { DirectivesComponent } from './components/directives/directives.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EventosComponent } from './components/eventos/eventos.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { EmitterComponent } from './components/emitter/emitter.component';
+import { ChangeNumberComponent } from './components/change-number/change-number.component';
+import { ListRenderComponent } from './components/list-render/list-render.component';
+import { PipesOperatorComponent } from './components/pipes-operator/pipes-operator.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,12 +23,17 @@ import { HttpClientModule } from '@angular/common/http'
     ParentDataComponent,
     DirectivesComponent,
     IfRenderComponent,
-    EventosComponent
+    EventosComponent,
+    EmitterComponent,
+    ChangeNumberComponent,
+    ListRenderComponent,
+    PipesOperatorComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
